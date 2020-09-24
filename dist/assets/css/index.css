@@ -1,0 +1,19 @@
+body {
+  background: url('../imgs/background.jpg');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover
+}
+
+#canvasParams {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  border: 5px solid deeppink;
+  margin: 15px auto;
+}
+
+label {
+  border-bottom: 2px solid deeppink;
+  color: deeppink; font-weight: bold;
+}

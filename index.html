@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Project</title>
+  <link rel="shortcut icon" href="dist/assets/imgs/favicon.png">
+  <!-- Boostrap CSS -->
+  <link rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+  <link href="http://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="dist/assets/css/index.css">
+</head>
+<body>
+  <section id="canvasSection" class="container"></section>
+  <section id="canvasParams" class="container">
+    <form>
+      <div class="row">
+        <div class="col-4">
+          <div class="form-group">
+            <label for="snakeSelect">Choose a snake</label>
+            <select class="form-control" id="snakeSelect">
+              <option value="randomSnake">Random Snake</option>
+              <option value="random">Random Colored Snake</option>
+              <option value="default" selected="selected">Default Snake</option>
+              <option value="rainbow">Rainbow</option>
+              <option value="angel">Angel</option>
+              <option value="demon">Demon</option>
+            </select>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="difficultySelect">Difficulty</label>
+            <select class="form-control" id="difficultySelect">
+              <option value="random">Random - What about don't choose ?</option>
+              <option value="easy">Easy - slow speed, never accelerate, never loose points</option>
+              <option value="normal" selected="selected">Normal - normal speed, accelerate slowly, never loose points</option>
+              <option value="hard">Hard - increased speed, accelerate fast, never loose points</option>
+              <option value="hardcore">Hardcore - insane speed, accelerate like hell, Loose points</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <button class="btn btn-success" type="button" name="updateGame" id="btnUpdateGame">Valider les changements</button>
+        </div>
+    </form>
+  </section>
+
+  <!-- jQuery, Popper.js & Boostrap js (dependencies) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="dist/bundle.js"></script>
+</body>
+</html>
