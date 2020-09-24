@@ -46,7 +46,7 @@ import Drawing from './Drawing.class';
     this.canvas.width = this.canvasWidth;
     this.canvas.height = this.canvasHeight;
     this.canvas.style.width = "100%";
-    this.canvas.style.margin = "50px auto";
+    this.canvas.style.margin = "15px auto";
     this.canvas.style.display = "block";
     for(let cStyle in this.canvasStyles)
       this.canvas.style[cStyle] = this.canvasStyles[cStyle];
